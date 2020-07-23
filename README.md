@@ -41,7 +41,7 @@ curl --request GET \
 ## Arquitectura
 ![mutants architecture overview](extras/architecture.png "Architecture overview")
 Podría verse a la aplicación como una app que implementa un diseño CQRS simple, en el que hay por un lado los comandos (POST /mutant), y por otro las lecturas (GET /stats).
-A su vez, cada uno de estos flujos de escritura/comando esta implementado en tres capas:
+A su vez, cada uno de estos flujos de lectura/comando esta implementado en tres capas:
 - capa de Controllers, encargada de recibir requests Http
 - capa de Servicios, donde se encuentra la lógica de negocio
 - capa de Repositorios, encargada de acceder y almacenar los datos

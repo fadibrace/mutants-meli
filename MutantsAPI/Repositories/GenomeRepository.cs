@@ -58,6 +58,7 @@ namespace MutantsAPI.Repositories
             }
             catch (Exception)
             {
+                // should log the error here
                 return false;
             }
             return true;
